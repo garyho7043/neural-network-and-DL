@@ -19,7 +19,7 @@ from tensorflow.keras.models import load_model
 #label_folder = []
 #total_size = 0
 data_path = r".\python\NN\final\training"
-#C:\Users\win10\Desktop\code\python\NN\project2\cifar10\train"
+
 
 #os.walk() generates the file names(dirpath, dirnames, filenames) 
 #in a directory tree by walking the tree either top-down or bottom-up.
