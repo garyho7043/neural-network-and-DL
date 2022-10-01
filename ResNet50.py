@@ -18,7 +18,7 @@ from tensorflow.keras.models import load_model
 
 #label_folder = []
 #total_size = 0
-data_path = r"C:\Users\win10\Desktop\code\python\NN\final\training"
+data_path = r".\python\NN\final\training"
 #C:\Users\win10\Desktop\code\python\NN\project2\cifar10\train"
 
 #os.walk() generates the file names(dirpath, dirnames, filenames) 
@@ -55,7 +55,7 @@ base_y_train = []
 
 
 col_list = ["filename","category"]
-df = pd.read_csv(r'C:\Users\win10\Desktop\code\python\NN\final\label.csv', usecols=col_list)
+df = pd.read_csv(r'.\NN\final\label.csv', usecols=col_list)
 #FileName = df["filename"].tolist()
 FileName = df["filename"].tolist()
 nmp = df.to_numpy()
@@ -130,7 +130,7 @@ print(np.array(base_y_train).shape)
 
 
 
-#shuffile
+#shuffle
 buffer1 = []
 buffer2 = []
 
@@ -263,9 +263,7 @@ plt.show()
 #label_folder = []
 Filename = []
 total_size = 0
-data_path = r"C:\Users\win10\Desktop\code\python\NN\project2\real\Training data\410887043\410887043"
-#C:\Users\win10\Desktop\code\python\NN\project2\real\Training data\Testing data00"
-#C:\Users\win10\Desktop\code\python\NN\project2\cifar10\test"
+data_path = r".\Training data\Testing data"
 x_test_images = []
 
 
