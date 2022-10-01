@@ -124,7 +124,7 @@ def learning_rule_adjusting(learning_rate, weighted_array, next_layer_sigma, act
 
 label_folder = []
 total_size = 0
-data_path =r"C:\Users\Max\Desktop\python\programming\MLandDL\Training data"
+data_path =r".\Training data"  #path
 
 for root, dirts, files in os.walk(data_path):
     for dirt in dirts:
@@ -161,7 +161,7 @@ print(np.array(base_y_train).shape)
 
 #FileNameO = []
 #total_sizeO = 0
-#data_pathO =r"C:\Users\Max\Desktop\python\programming\MLandDL\mnist_testData\Testing_data"
+#data_pathO =r".\MLandDL\mnist_testData\Testing_data"  #path
 
 #for root, dirts, files in os.walk(data_pathO):
 #    for file in files:
@@ -184,7 +184,7 @@ print(np.array(base_y_train).shape)
 #training
 
 # elementary_data
-epoch = 1000
+epoch = 100
 learning_rate = 0.5
 #initial weight array :all element is 0.1
 data_num_in_same_category = 4000
@@ -194,11 +194,11 @@ perform_time = 0
 
 
 #settting of target array
-zero  = np.array([1, 0.5, 0.5, 0.5, 0.5])
-one   = np.array([0.5, 1, 0.5, 0.5, 0.5])
-two   = np.array([0.5, 0.5, 1, 0.5, 0.5])
-three = np.array([0.5, 0.5, 0.5, 1, 0.5])
-four  = np.array([0.5, 0.5, 0.5, 0.5, 1])
+zero  = np.array([1, 0, 0, 0, 0])
+one   = np.array([0, 1, 0, 0, 0])
+two   = np.array([0, 0, 1, 0, 0])
+three = np.array([0, 0, 0, 1, 0])
+four  = np.array([0, 0, 0, 0, 1])
 target_arrays_list = [zero, one, two, three, four]
 
 
@@ -315,7 +315,7 @@ print(weighted_arrays_list_output)
 #--------------------------------------------------------
 FileNameO = []
 total_sizeO = 0
-data_pathO =r"C:\Users\Max\Desktop\python\programming\MLandDL\Testing_data"
+data_pathO =r".\MLandDL\Testing_data"  #path
 
 for root, dirts, files in os.walk(data_pathO):
     for file in files:
@@ -457,7 +457,7 @@ print(final_list)
      
 FileNameO = []
 total_sizeO = 0
-data_pathO =r"C:\Users\Max\Desktop\python\programming\MLandDL\Testing_data"
+data_pathO =r".\MLandDL\Testing_data"  #path
 
 for root, dirts, files in os.walk(data_pathO):
     for file in files:
