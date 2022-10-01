@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 label_folder = []
 total_size = 0
-data_path = r"C:\Users\win10\Desktop\code\python\NN\project2\real\Training data\Training data"
+data_path = r".\Training data\Training data"
 #C:\Users\win10\Desktop\code\python\NN\project2\cifar10\train"
 
 #os.walk() generates the file names(dirpath, dirnames, filenames) 
@@ -69,7 +69,7 @@ print(np.array(base_y_train).shape)
 
 
 
-#shuffile
+#shuffle
 buffer1 = []
 buffer2 = []
 
@@ -185,9 +185,7 @@ plt.show()
 #label_folder = []
 FilenameO = []
 total_size = 0
-data_pathO = r"C:\Users\win10\Desktop\code\python\NN\project2\real\Training data\410887043\410887043"
-#C:\Users\win10\Desktop\code\python\NN\project2\real\Training data\Testing data00"
-#C:\Users\win10\Desktop\code\python\NN\project2\cifar10\test"
+data_pathO = r".\Testing data"  #path
 
 #os.walk() generates the file names(dirpath, dirnames, filenames) 
 #in a directory tree by walking the tree either top-down or bottom-up.
